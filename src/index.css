@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+ nav a.active{
+    color: rgb(249, 140, 23);
+}
+
+ul a.active{
+    color: red;
+
+}
