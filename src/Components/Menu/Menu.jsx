@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import Links from '../Links/Links';
 
-const Links = [
+const LinksItems = [
   {
     id: 1,
     name: "Home",
@@ -39,11 +40,14 @@ const Links = [
 
 
 const Menu = () => {
+  const menu = LinksItems.map(link => <Links link={link} key={link.id}></Links>)
     return (
         <header>
             <nav >
               <ul className='flex gap-3 justify-center items-center'>
-                {Links.map(link => <NavLink to={link.path}>{link.name}</NavLink>)}
+                 {
+                    menu
+                }
               </ul>
             </nav>
         </header>
