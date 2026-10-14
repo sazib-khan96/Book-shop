@@ -5,9 +5,9 @@ import Product from '../../Components/Product/Product';
 const Products = () => {
     const products = useLoaderData()
     return (
-        <div>
+        <div className='grid grid-cols-4 gap-5'>
             {
-                products.map(product => <Product product={product}></Product>)
+                products.map(product => <Product key={product.id} product={product}></Product>)
             }
         </div>
     );

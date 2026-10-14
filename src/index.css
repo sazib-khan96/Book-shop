@@ -8,3 +8,9 @@ ul a.active{
     color: red;
 
 }
+.my-btn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

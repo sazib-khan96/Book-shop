@@ -3,16 +3,17 @@ import Root from "../Root/Root";
 import Home from "../Pages/Home/Home";
 import Contact from "../Pages/Contact/Contact";
 
-import Help from "../Pages/Help/Help";
+
 import About from "../Pages/About/About";
 import Service from "../Pages/Services/Service";
 import Wordpress from "../Components/Wordpress/Wordpress";
 import Elementor from "../Components/Elementor/Elementor";
 import Products from './../Pages/Products/Products';
 import Blog from "../Pages/Blog/Blog";
+import ProductDetails from "../Components/ProductDetails/ProductDetails";
 
-const Product = fetch('https://fakestoreapi.com/products')
-.then(res => res.json())
+
+
 
 const Router = createBrowserRouter([
     {path: '/',
@@ -48,6 +49,12 @@ const Router = createBrowserRouter([
                 loader: () => fetch('https://fakestoreapi.com/products'),
                 Component:Products
             },
+            {
+                path:'products/:id',
+                loader: ({params}) => fetch(`https://fakestoreapi.com/products/${params.id}`),
+                Component:ProductDetails,
+            },
+            
             {
                 path: "blog",
                 Component:Blog
