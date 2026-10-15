@@ -11,6 +11,8 @@ import Elementor from "../Components/Elementor/Elementor";
 import Products from './../Pages/Products/Products';
 import Blog from "../Pages/Blog/Blog";
 import ProductDetails from "../Components/ProductDetails/ProductDetails";
+import axios from "axios";
+import EveryPost from "../Components/EveryPost/EveryPost";
 
 
 
@@ -57,7 +59,14 @@ const Router = createBrowserRouter([
             
             {
                 path: "blog",
+                loader: () => axios('https://dummyjson.com/posts'),
                 Component:Blog
+            },
+            {
+              path: 'blog/:id',
+            //   loader: ({params}) => fetch(`https://dummyjson.com/posts/${params.id}`),
+            loader: ({params}) => axios(`https://dummyjson.com/posts/${params.id}`),
+              Component:EveryPost,
             }
         ]
     }

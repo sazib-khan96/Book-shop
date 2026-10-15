@@ -1,11 +1,11 @@
 import React from 'react';
-import Menu from '../Components/Menu/Menu';
+import NavMenu from '../Components/Menu/NavMenu'
 import { Outlet } from 'react-router';
 
 const Root = () => {
     return (
         <div className='max-w-8xl mx-auto p-3'>
-            <Menu></Menu>
+            <NavMenu></NavMenu>
             <Outlet></Outlet>
         </div>
     );
