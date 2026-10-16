@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getData = () => {
   const datastring = localStorage.getItem("wishList");
   if (datastring) {
@@ -10,12 +12,13 @@ const getData = () => {
 export const setData = (id) => {
   const saveData = getData();
   if (saveData.includes(id)) {
-    alert("already exit");
+    toast.error('already exis')
     return
   }
 
   saveData.push(id)
   localStorage.setItem('wishList', JSON.stringify(saveData))
+  toast.success('successFully added')
 
 //   const setitem = localStorage.setItem("wishList", "setvalue");
 //   JSON.stringify(setitem);
