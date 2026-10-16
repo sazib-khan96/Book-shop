@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router';
 
 const Product = ({product}) => {
-    console.log(product)
     const {id,title,image,price, category,} = product
     return (
         <div className='p-5 h-3xl text-center mt-8 bg-gray-100 rounded-2xl'>

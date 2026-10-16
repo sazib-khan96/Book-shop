@@ -12,7 +12,7 @@ const getData = () => {
 export const setData = (id) => {
   const saveData = getData();
   if (saveData.includes(id)) {
-    toast.error('already exis')
+    toast.error('already exist')
     return
   }
 

@@ -2,6 +2,7 @@ import React from "react";
 import NavMenu from "../Components/Menu/NavMenu";
 import { Outlet } from "react-router";
 import { ToastContainer } from "react-toastify";
+import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   return (
@@ -13,7 +14,11 @@ const Root = () => {
        theme="light" 
        />
 
-      <Outlet></Outlet>
+      <main>
+        <Outlet></Outlet>
+      </main>
+
+      <Footer></Footer>
     </div>
   );
 };
