@@ -9,7 +9,7 @@ const Post = ({ blog }) => {
     <div className="w-6xl mx-auto p-5 border">
       <h1 className="text-2xl">{blog.title}</h1>
       <NavLink to={`/blog/${id}`}>
-        <button>View Details</button>
+        <button className="my-btn mt-5">View Details</button>
       </NavLink>
     </div>
   );

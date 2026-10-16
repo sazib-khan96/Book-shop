@@ -6,7 +6,7 @@ import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   return (
-    <div className="max-w-8xl mx-auto p-3">
+    <div className="max-w-8xl mx-auto">
       <NavMenu></NavMenu>
       <ToastContainer
        position="top-right" 

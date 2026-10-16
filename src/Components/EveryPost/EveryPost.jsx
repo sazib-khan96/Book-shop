@@ -15,7 +15,7 @@ const EveryPost = () => {
             <h1 className='text-2xl my-5'>{title}</h1>
             <p>{body}</p>
 
-            <button onClick={navigateHandle}> Go Back</button>
+            <button onClick={navigateHandle} className='my-btn mt-5'> Go Back</button>
         </div>
     );
 };
