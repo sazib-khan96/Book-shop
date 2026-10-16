@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData, useNavigate } from "react-router";
-
+import {setData} from '../../Utility/Utility'
 
 const ProductDetails = () => {
   const navigate = useNavigate();
@@ -13,6 +13,10 @@ const ProductDetails = () => {
     navigate(-1);
   };
 
+
+  const whitListHandle = (id) => {
+    setData(id)
+  }
   return (
     <div className="flex flex-col md:flex-row gap-10 mt-8 max-w-5xl p-8 bg-gray-100 mx-auto rounded-lg">
       <div className="flex flex-col items-center gap-5">
@@ -50,16 +54,9 @@ const ProductDetails = () => {
         <div className="flex flex-wrap gap-3">
           <button className="my-btn">Order Now</button>
 
-          <button className="border px-4 py-2 rounded">Add to wishlist</button>
+          <button onClick={ () => whitListHandle(id)} className="border px-4 py-2 rounded">Add to wishlist</button>
         </div>
-        <button>
-          <a
-            href="https://wa.me/8801962523796"
-            target="blank"
-            rel="noopener noreferrer"
-          ></a>
-          Whats App
-        </button>
+       
       </div>
     </div>
   );

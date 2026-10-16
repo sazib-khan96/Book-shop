@@ -1,9 +1,14 @@
 import React from 'react';
+import { useLoaderData } from 'react-router';
 
 const Contact = () => {
+    const users = useLoaderData()
+   console.log(users)
     return (
         <div>
-            <h1>hello contact page</h1>
+        {
+            users.map(user => <li>{user.title}</li>)
+        }
         </div>
     );
 };

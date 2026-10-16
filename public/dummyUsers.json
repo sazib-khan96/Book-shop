@@ -1,0 +1,65 @@
+[
+  {
+    "id": 101,
+    "title": "Wireless Noise Canceling Headphones",
+    "category": "Electronics",
+    "price": 120,
+    "rating": 4.5,
+    "inStock": true,
+    "brand": "Sony"
+  },
+  {
+    "id": 102,
+    "title": "Ergonomic Office Chair",
+    "category": "Furniture",
+    "price": 250,
+    "rating": 4.2,
+    "inStock": false,
+    "brand": "Ikea"
+  },
+  {
+    "id": 103,
+    "title": "Mechanical Gaming Keyboard",
+    "category": "Electronics",
+    "price": 85,
+    "rating": 4.8,
+    "inStock": true,
+    "brand": "Logitech"
+  },
+  {
+    "id": 104,
+    "title": "Running Sports Shoes",
+    "category": "Footwear",
+    "price": 65,
+    "rating": 3.9,
+    "inStock": true,
+    "brand": "Nike"
+  },
+  {
+    "id": 105,
+    "title": "Stainless Steel Water Bottle",
+    "category": "Accessories",
+    "price": 20,
+    "rating": 4.6,
+    "inStock": true,
+    "brand": "Ocean"
+  },
+  {
+    "id": 106,
+    "title": "Smart Watch Series 7",
+    "category": "Electronics",
+    "price": 300,
+    "rating": 4.7,
+    "inStock": false,
+    "brand": "Apple"
+  },
+  {
+    "id": 107,
+    "title": "Leather Travel Backpack",
+    "category": "Accessories",
+    "price": 95,
+    "rating": 4.1,
+    "inStock": true,
+    "brand": "Wildcraft"
+  }
+]

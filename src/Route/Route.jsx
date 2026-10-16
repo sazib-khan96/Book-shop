@@ -44,6 +44,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "contact",
+                loader: () => fetch('dummyUsers.json'),
                 Component :Contact
             },
             {
