@@ -14,6 +14,7 @@ import Blog from "../Pages/Blog/Blog";
 import ProductDetails from "../Components/ProductDetails/ProductDetails";
 import axios from "axios";
 import EveryPost from "../Components/EveryPost/EveryPost";
+import ReadList from "../Components/ReadList/ReadList";
 
 
 
@@ -42,6 +43,11 @@ const Router = createBrowserRouter([
                         Component:Elementor
                     }
                 ]
+            },
+            {
+                path:'readList',
+                loader: () => fetch('https://fakestoreapi.com/products'),
+                Component:ReadList,
             },
             {
                 path: "contact",

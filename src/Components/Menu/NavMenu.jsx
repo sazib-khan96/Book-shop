@@ -33,6 +33,11 @@ const LinksItems = [
     name: "Contact",
     path: "/contact",
   },
+  {
+    id:7,
+    name: "ReadList",
+    path: "/readList"
+  }
 ];
 
 const NavMenu = () => {

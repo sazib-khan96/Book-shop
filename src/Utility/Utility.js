@@ -23,3 +23,15 @@ export const setData = (id) => {
 //   const setitem = localStorage.setItem("wishList", "setvalue");
 //   JSON.stringify(setitem);
 };
+
+
+
+const getstrodData = () => {
+  const bookid = localStorage.getItem('wishList')
+  if(bookid) {
+     return JSON.parse(bookid)
+  }
+  return []
+}
+
+export {getstrodData}
